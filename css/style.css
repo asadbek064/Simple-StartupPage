@@ -220,7 +220,7 @@ body {
 }
 
 .items item .added-at {
-    font-size: 11px;
+    font-size: 14px;
     letter-spacing: .5px;
     color: #929292;
     font-weight: 400;
@@ -354,7 +354,7 @@ body {
     overflow: hidden;
     border-radius: 5px 0 0 5px;
     width: 90%;
-    height: 550px;
+    height: 560px;
     right: 0;
     left: 0;
     top: 0;
@@ -400,7 +400,6 @@ body {
     height: 100%;
     padding: 0 2em;
     color: #fff;
-    font-size: 20px;
     background: #1d1d21;
 }
 
@@ -638,3 +637,6 @@ body {
     font-weight: 700;
 }
 
+p {
+    font-size: large!important;
+}
