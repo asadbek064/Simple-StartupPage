@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="https://github.com/0-l">
+        <link rel="stylesheet" type="text/css" href="css/awoo.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200|Roboto:100,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    
+    <title>~</title>
+</head>
+<body onload="PageLoad()">
+    <div id="search">
+        <div>
+            <input type="text" spellcheck="false" placeholder="search">
+            <button class="close"><i class="material-icons">&#xE5CD;</i></button>
+            <ul class="search-engines"></ul>
+        </div>
+    </div>
+    <div id="links" class="-">
+        <div id="tabs" class="!-">
+            
+                <div class="+ widgets">
+                    <p class="time">00<span>:00</span></p>
+                    <div class="!+ + weather-config">
+                        <input name="color" type="text" placeholder="location">
+                    </div>
+                    <div class="+ weather">
+                        <button class="!+ edit">edit</button>
+                        <p temperature>4ºC</p>
+                        <p weather class="+">
+                            <i class="material-icons" sunny>wb_sunny</i>
+                        </p>
+                    </div>
+                </div>
+        
+        </div>
+        <div id="panels">
+            <ul class="boards" active>
+                <div class="links">
+                    <li>
+                        <h1>Work</h1>
+                        <a href="https://pieshares.atlassian.net/"  target="_blank"><img src="https://img.icons8.com/color/20/000000/jira.png"/>Jira</a>
+                        <a href="https://app.slack.com/client/" target="_blank"> <img src="https://img.icons8.com/color/20/000000/slack-new.png"/> Slack</a>
+                        <a href="https://stackoverflow.com/users/8628497/karimov"><img src="https://img.icons8.com/color/20/000000/stackoverflow.png"/> StackOverflow</a>
+                        <a href="https://github.com/"><img src="https://img.icons8.com/fluent/20/000000/github.png"/> Github</a>
+                        <a href="http://pieshares.com/cpanel"><img src="https://img.icons8.com/office/20/000000/console.png"/> cPanel</a>
+                    </li>
+                    <li>
+                        <h1>Fun</h1>
+                        <a href="https://4chan.org/a/">/a/</a>
+                        <a href="https://4chan.org/lit/">/lit/</a>
+                        <a href="https://4chan.org/jp/">/jp/</a>
+                        <a href="https://4chan.org/r9k/">/r9k/</a>
+                        <a href="https://www.4chan.org/wg/">/wg/</a>
+                    </li>
+                    <li>
+                        <h1>Comfy</h1>
+                        <a href="https://www.youtube.com/c/RedOctoberHotFireFly/playlists?view_as=subscriber"><img src="https://img.icons8.com/color/20/000000/musical--v1.png"/> y-playlist</a>
+                        <a href="https://sushigirl.us/lounge/">/lounge/</a>
+                        <a href="https://www.4chan.org/wsg/">/wsg/</a> 
+                        <a href="https://www11.9anime.to/">9anime</a> 
+                        <a href="https://netflix.com/">Netflix</a> 
+                    </li>
+                    <li>
+                        <h1>Technology</h1>
+                        <a href="https://4chan.org/g/">/g/</a>
+                        <a href="https://www.lainchan.org/lambda/">/λ/</a>
+                        <a href="https://www.lainchan.org/sec/">/sec/</a>
+                        <a href="https://boards.420chan.org/prog/">/prog/</a>
+                        <a href="https://8ch.net/g/">/8g/</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="|" id="todo">
+        <button class="+ add"><img src="img/add.png"></button>
+        <div class="+ addTodo">
+            <input type="text" value="" placeholder="todo" spellcheck="false">
+        </div>
+        <rows class="items">
+            <h1 class="+">todo</h1>
+        </rows>
+    </div>
+
+    <script type="text/javascript" src="js/strftime.js"></script>
+    <script type="text/javascript" src="js/todo.js"></script>
+    <script type="text/javascript" src="js/weather.js"></script>
+    <script type="text/javascript" src="js/powerline.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
