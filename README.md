@@ -10,8 +10,8 @@ Custom New Tab with custom
 
 
 ### Use
-Clone the repo 
-Edite Source Code to make it custmize it to your liking
-Upload on github and turn on github pages
-On your browser go to settings
+* Clone the repo 
+* Edite Source Code to make it custmize it to your liking
+* Upload on github and turn on github pages
+* On your browser go to settings
 * Chrome -> Settings -> On startup (select Open a specific page or set of pages) -> Insert the Link of Github Pages you hosted
