@@ -6,4 +6,4 @@ New Tab with clean
 * Custom Background Images (Locally stored)
 
 ### Preview
-![preview](https://imgur.com/Weththx)
+![preview](https://i.imgur.com/VS5aB4R.png)
