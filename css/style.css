@@ -114,6 +114,10 @@ body {
     transform: scale(1.15) rotateZ(45deg);
 }
 
+#todo .AddToListInput  {
+    font-size: 24px!important;
+}
+
 .items {
     background: var(--bg);
     padding: 1em;
@@ -632,9 +636,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-input {
-    font-size: 68px!important;
-}
 
 .search-engines li {
     margin: 0 1em 0 0;
