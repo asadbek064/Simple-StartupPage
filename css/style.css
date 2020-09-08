@@ -299,8 +299,8 @@ body {
 
 #tabs {
     top: 0;
-    width: 20%;
-    height: 60px;
+    width: 40%;
+    height: 100px;
     background: #18181d;
     margin: 3.5em auto;
     border-radius: 4px;
@@ -401,11 +401,15 @@ body {
     padding: 0 2em;
     color: #fff;
     background: #1d1d21;
+    display: flex;
+    justify-content: center;
 }
 
-#tabs > cols {
-    position: relative;
+.widgets p {
+    margin-right: 20px;
+    font-size: 32px;
 }
+
 
 #tabs .time {
     font-weight: 700;
@@ -517,7 +521,7 @@ body {
     letter-spacing: 1px;
     color: #fff;
     border: 0;
-    margin: 40px 0 0 0;
+    margin: 100px 0 0 0;
     cursor: pointer;
     transition: all .2s;
 }
@@ -624,8 +628,12 @@ body {
 .search-engines li p {
     cursor: default;
     transition: all .2s;
-    font-size: 12px;
+    font-size: 48px;
     font-family: 'Roboto', sans-serif;
+}
+
+input {
+    font-size: 68px!important;
 }
 
 .search-engines li {
@@ -635,8 +643,4 @@ body {
 .search-engines li.active {
     color: #fff;
     font-weight: 700;
-}
-
-p {
-    font-size: large!important;
 }

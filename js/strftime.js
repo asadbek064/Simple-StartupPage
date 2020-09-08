@@ -5,7 +5,6 @@
 Author: https://github.com/0-l
 Description: silly strftime function implementation in js without the percentage notation.
              based off https://strftime.org
-
 USAGE: strftime('H:M p - A') => 21:32 AM - Thursday
        strftime('m/b/Y')     => 1/Jan/2018
        strftime('do B Y')    => 18th January 2018
@@ -56,3 +55,7 @@ const strftime = (format = 'c') => {
 
   return result.join('');
 };
+
+
+
+

@@ -3,14 +3,14 @@ var search  = $('#search'),
     engines = engines();
 
 for (var key in engines)
-  $('.search-engines').innerHTML += `<li><p title="${engines[key][1]}">!${key}</p></li>`;
+  $('.search-engines').innerHTML += `<li><p title="${engines[key][0]}">!${key}</p></li>`;
 
 $('#search .close').onclick = () =>
   search.classList.remove('active');
 
 document.onkeypress = (e) => {
   if (document.activeElement !== $('.addTodo input') && document.activeElement !== $('.weather-config input')) {
-    if (e.key == 's')
+    if (e.key == 'A' ||  'B' ||  'C' ||  'D' ||  "E" ||  'F' ||  'G' ||  'H' ||  'I' ||  'J' ||  'K' ||  'L' ||  'M' ||  'N' ||  'O' ||  'P' ||  'Q' ||  'R' ||  'S' ||  'T' ||  'U' ||  'V' ||  'W' ||  'X' ||  'Y' ||  'Z' )
       search.classList.add('active');
 
     input.focus();
@@ -35,7 +35,7 @@ document.onkeypress = (e) => {
 
       if (e.key == 'Enter') {
         if (prefix.indexOf('!') == 0)
-          (engine = engines[prefix.substr(1)][0], str = 3);
+          (engine = engines[prefix.substr(1)][0], str = 0);
 
         window.location = engine + args.join(' ').substr(str).toString().replace(/\s+/m, '%20');
       } else if (e.keyCode == 27)
