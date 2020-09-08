@@ -19,16 +19,17 @@
         </div>
     </div>
     <div id="links" class="-">
-        <id id="tabs" class="!-">
+        <div id="panels">
+            <ul class="boards" active>
                 <div class="+ widgets">
                     <p id="clock">
                         00/00/0000
                         00:00:00
                     </p>
                     <div class="!+ + weather-config">
-                        <input name="color" type="text" placeholder="ZipCode">
+                        <input id="ChangeLoc" name="color" type="text" placeholder="Zip Code">
                     </div>
-                    <div class="+ weather">
+                    <div class="+ weather"  onclick="document.getElementById('ChangeLoc').focus(); return false;">
                         <button class="!+ edit">edit</button>
                         <p temperature>4ºC</p>
                         <p weather class="+">
@@ -36,10 +37,7 @@
                         </p>
                     </div>
                 </div>
-            
-        </div>
-        <div id="panels">
-            <ul class="boards" active>
+
                 <div class="links">
                     <li>
                         <h1>Work</h1>

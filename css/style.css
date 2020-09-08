@@ -25,6 +25,8 @@
         -ms-user-select: none;
          -o-user-select: none;
             user-select: none;
+
+    -webkit-text-size-adjust: auto;
 }
 
 :root {
@@ -357,8 +359,8 @@ body {
     opacity: 99.5%;
     overflow: hidden;
     border-radius: 5px 0 0 5px;
-    width: 90%;
-    height: 560px;
+    width: 50%;
+    height: 630px;
     right: 0;
     left: 0;
     top: 0;
@@ -376,7 +378,7 @@ body {
     width: 100%;
     height: 100%;
     right: 100%;
-    transition: all .6s;
+    transition: all .5s;
 }
 
 #panels ul:nth-child(2),
@@ -394,24 +396,27 @@ body {
 }
 
 #panels ul[active] {
-    right: 0;
+    left: 0;
     z-index: 5;
 }
 
 #tabs .widgets {
+
     width: 100%;
-    margin: auto;
     height: 100%;
     padding: 0 2em;
-    color: #fff;
+    color: #fff!important;
     background: #1d1d21;
-    display: flex;
-    justify-content: center;
+ 
 }
 
+.widgets {
+    margin-top: 20px;
+}
 .widgets p {
+    color: white;
     margin-right: 20px;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 
@@ -435,7 +440,7 @@ body {
 }
 
 #tabs i {
-    font-size: 21px !important;
+    font-size: 2em!important;
 }
 
 #tabs i[sunny] { color: #F3DE8A; }
@@ -444,7 +449,6 @@ body {
 
 
 #panels .links {
-    
     width: 100%;
     height: 100%;
     background: #18181d;
@@ -484,7 +488,7 @@ body {
 
 #panels > ul:first-child .links li h1 {
     color: #383838;
-    font-size: 22px;
+    font-size: 1em;
     margin-bottom: .5em;
     font-weight: 700;
     letter-spacing: 1px;
@@ -518,10 +522,10 @@ body {
 
 .weather .edit {
     width: 100%;
-    height: 100%;
+    height: 20%;
     background: #1f1f1f;
     text-transform: uppercase;
-    font: 600 11px 'Roboto', sans-serif;
+    font: 600 14px 'Roboto', sans-serif;
     letter-spacing: 1px;
     color: #fff;
     border: 0;
@@ -536,7 +540,7 @@ body {
 
 .weather-config {
     width: 100%;
-    height: 100%;
+    height: 15%;
     background: #1f1f1f;
     margin: -100% 0 0 0;
     transition: all .2s;
@@ -548,9 +552,11 @@ body {
     padding: .6em;
     border: 0;
     background: 0;
+    font-size: large!important;
     box-shadow: inset 0 -2px #fff;
-    font: 500 12px 'Roboto', sans-serif;
+    font: 500 2em 'Roboto', sans-serif;
     color: #fff;
+    text-align: center;
 }
 
 .weather-config.show {
@@ -590,7 +596,7 @@ body {
     box-shadow: inset 0 -2px #737373;
     padding: .5em 0;
     background: none;
-    font: 500 22px 'Roboto', sans-serif;
+    font: 500 9em 'Roboto', sans-serif;
     letter-spacing: 1px;
     color: #fff;
 }
@@ -632,7 +638,7 @@ body {
 .search-engines li p {
     cursor: default;
     transition: all .2s;
-    font-size: 48px;
+    font-size: 3em;
     font-family: 'Roboto', sans-serif;
 }
 
