@@ -15,3 +15,11 @@ Custom New Tab with custom
 * Upload to github and turn on github pages
 * On your browser go to settings
 * Chrome -> Settings -> On startup (select Open a specific page or set of pages) -> Insert the Link of Github Pages you hosted
+
+### Message
+I'm lazy didn't feel like making a full server with auth stuff to host and sync todo
+so I'm going to use free JSON service jsonbin.io.
+
+## *WARNING**WARNING**WARNING**WARNING**WARNING*
+ [Please don't store any senstive information
+ on your todo list]   

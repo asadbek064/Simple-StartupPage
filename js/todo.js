@@ -1,5 +1,44 @@
 class Todo {
-  constructor() { }
+  constructor() { 
+    this.getTodo();
+  }
+
+  /* I'm lazy didn't feel like making a full server with auth stuff to host and sync todo
+     so I'm going to use free JSON service jsonbin.io.
+
+    *WARNING**WARNING**WARNING**WARNING**WARNING*
+     Please don't store any senstive information
+     on your todo list   
+  */
+  getTodo() {
+    let req = new XMLHttpRequest();
+
+    req.onreadystatechange = () => {
+      if (req.readyState == XMLHttpRequest.DONE) {
+        localStorage.todo = req.responseText;
+      }
+    };
+
+    req.open("GET", "https://api.jsonbin.io/b/5f618b70302a837e95672a7c", true);
+    req.setRequestHeader("secret-key", "$2b$10$NuPQdTNJ6pWC.TvnZKaWzuvue4E/gqKGVPCB5ioqloqkT5dD.OIAW");
+    req.send()
+  }
+
+  syncTodo() {
+    let req = new XMLHttpRequest();
+    let todos = localStorage.todo;
+    
+    req.onreadystatechange = () => {
+      if (req.readyState == XMLHttpRequest.DONE) {
+        console.log(req.responseText);
+      }
+    };
+
+    req.open("PUT", "https://api.jsonbin.io/b/5f618b70302a837e95672a7c", true);
+    req.setRequestHeader("Content-Type", "application/json");
+    req.setRequestHeader("secret-key", "$2b$10$NuPQdTNJ6pWC.TvnZKaWzuvue4E/gqKGVPCB5ioqloqkT5dD.OIAW");
+    req.send(todos);
+  }
 
   get display() {
     $('.add').onclick = () => {
@@ -21,6 +60,9 @@ class Todo {
 
         this.show(true);
         this.stateHandler();
+
+        // update Online Json
+        this.syncTodo();
       }
     };
 
