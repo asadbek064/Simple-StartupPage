@@ -20,5 +20,3 @@ Custom New Tab with custom
 I'm lazy didn't feel like making a full server with auth stuff to host and sync todo
 so I'm going to use free JSON service jsonbin.io.
 
-
-https://github.com/0-l/dawn 
