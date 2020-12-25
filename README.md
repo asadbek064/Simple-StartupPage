@@ -6,7 +6,7 @@ Custom New Tab with custom
 * Custom Background Images (Locally stored)
 
 ### Preview
-## [Demo](https://github.com/asadbek064?tab=overview&from=2020-12-01&to=2020-12-25)
+## [Demo](https://asadbek064.github.io/Simple-StartupPage/)
 ![preview](https://i.imgur.com/VS5aB4R.png)
 
 
