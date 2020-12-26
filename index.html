@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200|Roboto:100,400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" type="text/css">
+
         <link  rel="icon" type="image/png" href="https://img.icons8.com/fluent/48/000000/home.png">
     <title>New Tab</title>
 </head>
@@ -18,6 +19,13 @@
             <ul class="search-engines"></ul>
         </div>
     </div>
+    
+    <div id="header">
+        <div class="headerWrapper">
+            <span class="headerText">Hey!</span>
+        </div>
+    </div>
+
     <div id="links" class="-">
         <div id="panels">
             <ul class="boards" active>
@@ -73,9 +81,52 @@
                         <a href="https://8ch.net/g/">/8g/</a>
                     </li>
                 </div>
+                <div class="syncContainer">
+                    <div class="syncButtonContainer">
+                        <button class="" id="syncButton" type="button">SYNC</button>
+                    </div>
+                    <div class="loginFormContainer">
+                        <form class="box" action="#">
+                            <h1>Login</h1>
+                            <div class="form-field">
+                                <input type="text" placeholder="Username"></div>
+                            <div class="form-field">
+                                <input type="password" placeholder="Password">
+                            </div>
+                            <div class="form-field register">
+                                <a href="#" id="register">register</a>
+                            </div>
+                            <div class="form-field">
+                                <input type="submit" value="submit">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="registerFormContainer">
+                        <form class="box" action="#">
+                            <h1>Register</h1>
+                            <div class="form-field">
+                                <input type="text" placeholder="Email" id="email" required></div>
+                            <div class="form-field">
+                                <input type="password" placeholder="Password" id="password" required>
+                            </div>
+                            <div class="form-field">
+                                <input type="password" placeholder="Repeat Password" id="repeatPassword" required>
+                            </div>
+                            <div class="form-field login">
+                                <a href="#" id="login">login</a>
+                            </div>
+                            <div class="form-field">
+                                <input type="submit" value="submit">
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
             </ul>
         </div>
     </div>
+
     <div class="|" id="todo">
         <button class="+ add"><img src="img/add.png"></button>
         <div class="+ addTodo">
@@ -92,5 +143,6 @@
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/search.js"></script>
     <script type="text/javascript" src="js/clock.js"></script>
+    <script type="text/javascript" src="js/auth.js"></script>
 </body>
 </html>
