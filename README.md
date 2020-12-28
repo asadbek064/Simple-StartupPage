@@ -1,8 +1,9 @@
 # Simple-Tab
 Custom New Tab with custom
-* Reminder (will Store your reminders on you browsers Local Storage)
-* Cards (categorized lists with important links of your choosing)
-* Custom Background Images (Locally stored)
+* Reminder Todo
+* Custom Cards
+* Custom Background Images
+
 
 ### Preview
 ## [Demo](https://asadbek064.github.io/Simple-StartupPage/)
@@ -10,13 +11,10 @@ Custom New Tab with custom
 
 
 ### Use
-* Clone the repo 
-* Edite Source Code to make it custmize it to your liking
-* Upload to github and turn on github pages
 * On your browser go to settings
-* Chrome -> Settings -> On startup (select Open a specific page or set of pages) -> Insert the Link of Github Pages you hosted
+* Chrome -> Settings -> On startup (select Open a specific page or set of pages) -> Insert the Link `https://asadbek064.github.io/Simple-StartupPage/`;
+
 
 ### Message
-I'm lazy didn't feel like making a full server with auth stuff to host and sync todo
-so I'm going to use free JSON service jsonbin.io.
-
+* All Data is stored on LocalStorage except imageHosting 
+*  imageHosting is hadled by [Cloudinary]("https://cloudinary.com/")  
