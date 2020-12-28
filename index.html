@@ -2,23 +2,17 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="author" content="https://github.com/0-l">
+        <meta name="author" content="https://github.com/asadbek064">
         <link rel="stylesheet" type="text/css" href="css/awoo.min.css">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200|Roboto:100,400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link  rel="icon" type="image/png" href="https://img.icons8.com/fluent/48/000000/home.png">        
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
-        <link  rel="icon" type="image/png" href="https://img.icons8.com/fluent/48/000000/home.png">
     <title>New Tab</title>
 </head>
 <body>
-    <div id="search">
-        <div>
-            <input type="text" spellcheck="false" placeholder="search">
-            <button class="close"><i class="material-icons">&#xE5CD;</i></button>
-            <ul class="search-engines"></ul>
-        </div>
-    </div>
     
     <div id="header">
         <div class="headerWrapper">
@@ -47,83 +41,109 @@
                 </div>
 
                 <div class="links">
-                    <li>
-                        <h1>Work</h1>
-                        <a href="https://pieshares.atlassian.net/"  target="_blank"><img src="https://img.icons8.com/color/20/000000/jira.png"/>Jira</a>
-                        <a href="https://app.slack.com/client/" target="_blank"> <img src="https://img.icons8.com/color/20/000000/slack-new.png"/> Slack</a>
-                        <a href="https://stackoverflow.com/users/8628497/karimov"><img src="https://img.icons8.com/color/20/000000/stackoverflow.png"/> StackOverflow</a>
-                        <a href="https://github.com/"><img src="https://img.icons8.com/fluent/20/000000/github.png"/> Github</a>
-                        <a href="http://pieshares.com/cpanel"><img src="https://img.icons8.com/office/20/000000/console.png"/> cPanel</a>
-                    </li>
-                    <li>
-                        <h1>Fun</h1>
-                        <a href="https://4chan.org/a/">/a/</a>
-                        <a href="https://4chan.org/lit/">/lit/</a>
-                        <a href="https://4chan.org/jp/">/jp/</a>
-                        <a href="https://4chan.org/r9k/">/r9k/</a>
-                        <a href="https://www.4chan.org/wg/">/wg/</a>
-                    </li>
-                    <li>
-                        <h1>Comfy</h1>
-                        <a href="https://www.youtube.com/c/RedOctoberHotFireFly/playlists?view_as=subscriber"><img src="https://img.icons8.com/color/20/000000/musical--v1.png"/> y-playlist</a>
-                        <a href="https://sushigirl.us/lounge/">/lounge/</a>
-                        <a href="https://www.4chan.org/wsg/">/wsg/</a> 
-                        <a href="https://comfyfeel.github.io/">Comfy Tab</a> 
-                        <a href="https://www11.9anime.to/">9anime</a> 
-                        <a href="https://netflix.com/">Netflix</a> 
-                    </li>
-                    <li>
-                        <h1>Technology</h1>
-                        <a href="https://4chan.org/g/">/g/</a>
-                        <a href="https://www.lainchan.org/lambda/">/λ/</a>
-                        <a href="https://www.lainchan.org/sec/">/sec/</a>
-                        <a href="https://boards.420chan.org/prog/">/prog/</a>
-                        <a href="https://8ch.net/g/">/8g/</a>
-                    </li>
+                   <li>
+                       <h1 id="groupTitle"></h1>
+                       <a></a>
+                   </li>
                 </div>
-                <div class="syncContainer">
-                    <div class="syncButtonContainer">
-                        <button class="" id="syncButton" type="button">SYNC</button>
-                    </div>
-                    <div class="loginFormContainer">
-                        <form class="box" action="#">
-                            <h1>Login</h1>
-                            <div class="form-field">
-                                <input type="text" placeholder="Username"></div>
-                            <div class="form-field">
-                                <input type="password" placeholder="Password">
-                            </div>
-                            <div class="form-field register">
-                                <a href="#" id="register">register</a>
-                            </div>
-                            <div class="form-field">
-                                <input type="submit" value="submit">
-                            </div>
-                        </form>
-                    </div>
 
-                    <div class="registerFormContainer">
-                        <form class="box" action="#">
-                            <h1>Register</h1>
-                            <div class="form-field">
-                                <input type="text" placeholder="Email" id="email" required></div>
-                            <div class="form-field">
-                                <input type="password" placeholder="Password" id="password" required>
-                            </div>
-                            <div class="form-field">
-                                <input type="password" placeholder="Repeat Password" id="repeatPassword" required>
-                            </div>
-                            <div class="form-field login">
-                                <a href="#" id="login">login</a>
-                            </div>
-                            <div class="form-field">
-                                <input type="submit" value="submit">
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
             </ul>
+            <div class="editButtonWrapper">
+                <a  id="editButton" onclick="openEditeView()"><img src="./img/icons/customize.png" alt="customize_icon"></a>
+                <a  id="saveButton" onclick="saveEditeView()"><img src="./img/icons/checked.png" alt="checked_icon"></a>
+
+            </div>
+            <div id="editView">
+                <div class="parent">
+                    <div class="div1"> 
+                        <input type="text" class="urlLink"  id="urlLink1" placeholder="https://url" />
+                        <input type="text" class="title"  id="title1" placeholder="title">
+                    </div>
+                    <div class="div2">  
+                        <input type="text" class="urlLink"  id="urlLink2" placeholder="https://url" />
+                        <input type="text" class="title"  id="title2" placeholder="title">
+                    </div>
+                    <div class="div3">  
+                        <input type="text" class="urlLink"  id="urlLink3" placeholder="https://url" />
+                        <input type="text" class="title"  id="title3" placeholder="title">
+                    </div>
+                    <div class="div4">  
+                        <input type="text" class="urlLink"  id="urlLink4" placeholder="https://url" />
+                        <input type="text" class="title"  id="title4" placeholder="title">
+                    </div>
+                    <div class="div5">  
+                        <input type="text" class="urlLink"  id="urlLink5" placeholder="https://url" />
+                        <input type="text" class="title"  id="title5" placeholder="title">
+                    </div>
+                    <div class="div6">  
+                        <input type="text" class="urlLink"  id="urlLink6" placeholder="https://url" />
+                        <input type="text" class="title"  id="title6" placeholder="title">
+                    </div>
+                    <div class="div7">  
+                        <input type="text" class="urlLink"  id="urlLink7" placeholder="https://url" />
+                        <input type="text" class="title"  id="title7" placeholder="title">
+                    </div>
+                    <div class="div8">  
+                        <input type="text" class="urlLink"  id="urlLink8" placeholder="https://url" />
+                        <input type="text" class="title"  id="title8" placeholder="title">
+                    </div>
+                    <div class="div9">  
+                        <input type="text" class="urlLink"  id="urlLink9" placeholder="https://url" />
+                        <input type="text" class="title"  id="title9" placeholder="title">
+                    </div>
+                    <div class="div10"> 
+                        <input type="text" class="urlLink"  id="urlLink10" placeholder="https://url" />
+                        <input type="text" class="title"  id="title10" placeholder="title">
+                    </div>
+                    <div class="div11"> 
+                        <input type="text" class="urlLink"  id="urlLink11" placeholder="https://url" />
+                        <input type="text" class="title"  id="title11" placeholder="title">
+                    </div>
+                    <div class="div12"> 
+                        <input type="text" class="urlLink"  id="urlLink12" placeholder="https://url" />
+                        <input type="text" class="title"  id="title12" placeholder="title">
+                    </div>
+                    <div class="div13"> 
+                        <input type="text" class="urlLink"  id="urlLink13" placeholder="https://url" />
+                        <input type="text" class="title"  id="title13" placeholder="title">
+                    </div>
+                    <div class="div14"> 
+                        <input type="text" class="urlLink"  id="urlLink14" placeholder="https://url" />
+                        <input type="text" class="title"  id="title14" placeholder="title">
+                    </div>
+                    <div class="div15"> 
+                        <input type="text" class="urlLink"  id="urlLink15" placeholder="https://url" />
+                        <input type="text" class="title"  id="title15" placeholder="title">
+                    </div>
+                    <div class="div16"> 
+                        <input type="text" class="urlLink"  id="urlLink16" placeholder="https://url" />
+                        <input type="text" class="title"  id="title16" placeholder="title">
+                    </div>
+                    <div class="div17"> 
+                        <input type="text" class="urlLink"  id="urlLink17" placeholder="https://url" />
+                        <input type="text" class="title"  id="title17" placeholder="title">
+                    </div>
+                    <div class="div18"> 
+                        <input type="text" class="urlLink"  id="urlLink18" placeholder="https://url" />
+                        <input type="text" class="title"  id="title18" placeholder="title">
+                    </div>
+                    <div class="div19"> 
+                        <input type="text" class="urlLink"  id="urlLink19" placeholder="https://url" />
+                        <input type="text" class="title"  id="title19" placeholder="title">
+                    </div>
+                    <div class="div20"> 
+                        <input type="text" class="urlLink" id="urlLink20" placeholder="https://url" />
+                        <input type="text" class="title" id="title20" placeholder="title">
+                    </div>
+                    
+                    <div class="tableTitles">
+                        <input id="rowTitle1" placeholder="Row 1 Title " />
+                        <input id="rowTitle2" placeholder="Row 2 Title " />
+                        <input id="rowTitle3" placeholder="Row 3 Title " />
+                        <input id="rowTitle4" placeholder="Row 4 Title " />
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -137,12 +157,17 @@
         </rows>
     </div>
 
-    <script type="text/javascript" src="js/strftime.js"></script>
-    <script type="text/javascript" src="js/todo.js"></script>
-    <script type="text/javascript" src="js/weather.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/search.js"></script>
-    <script type="text/javascript" src="js/clock.js"></script>
-    <script type="text/javascript" src="js/auth.js"></script>
+
+
+    <!-- The core Firebase JS SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+    <script src="js/weather.js" type="text/javascript"></script>
+    <script src="js/todo.js" type="text/javascript"></script>
+    <script src="js/customize.js" type="text/javascript"></script>
+    <script src="js/strftime.js" type="text/javascript"></script>
+    <script src="js/clock.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>

@@ -1,21 +1,13 @@
 const $  = (e) => document.querySelector(e),
       $$ = (e) => document.querySelectorAll(e);
 
-function engines () {
-  return {
-    g: ['https://google.com/search?q=', 'Google'],
-    d: ['https://duckduckgo.com/html?q=', 'DuckDuckGo'],
-    y: ['https://youtube.com/results?search_query=', 'Youtube'],
-    w: ['https://en.wikipedia.org/w/index.php?search=', 'Wikipedia']
-  };
-}
-
 const { parse, stringify } = JSON;
 
 const nodes = (elem) =>
       Array.prototype.slice.call($(elem).children);
 
 var place = localStorage.place || 'new york';
+
 
 $('.weather .edit').onclick = () =>
   $('.weather-config').classList.add('show');
@@ -44,4 +36,6 @@ window.onload = function PageLoad() {
 new Todo().display;
 new Weather(place).getWeather;
 
-
+var link = "https://boards.4channel.org/lit/";
+var title = "4chan";
+var shit = new LinkItem(link, title);

@@ -3,14 +3,6 @@ class Todo {
   
   }
 
-  /* I'm lazy didn't feel like making a full server with auth stuff to host and sync todo
-     so I'm going to use free JSON service jsonbin.io.
-
-    *WARNING**WARNING**WARNING**WARNING**WARNING*
-     Please don't store any senstive information
-     on your todo list   
-  */
-
   get display() {
     $('.add').onclick = () => {
       $('.add').classList.toggle('active');
