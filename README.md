@@ -19,7 +19,7 @@ Chrome doesn't allow to configure a new tab URL. So I made my own its fully cust
 ```  
 git clone https://github.com/asadbek064/Simple-StartupPage.git 
 ```
-- open chrome type <span style=" font-weight: bold;color:white; background-color:  #34373C" >chrome://extensions/</span> on urlbar
+- open chrome type <span style=" font-weight: bold;color:white; background-color:  #34373C" >chrome://extensions/</span> on url bar
 
 - Enable Dev mode  
 
