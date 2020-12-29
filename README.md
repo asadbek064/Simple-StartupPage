@@ -1,4 +1,5 @@
 # Simple-Tab Chrome Extension 
+
 ![Simple-Tab](http://res.cloudinary.com/dhl6hc7bs/image/upload/v1609206232/simple_startup/ut0pokoahmwegethwz9r.png)
 
 Chrome doesn't allow to configure a new tab URL. So I made my own its fully customizable, you can add your own card links and your own custom wallpaper.
@@ -18,7 +19,7 @@ Chrome doesn't allow to configure a new tab URL. So I made my own its fully cust
 ```  
 git clone https://github.com/asadbek064/Simple-StartupPage.git 
 ```
-- open chrome type <span style=" font-weight: bold;color:white; background-color:  #34373C" >chrome://extensions/</span> on urlbar
+- open chrome type <span style=" font-weight: bold;color:white; background-color:  #34373C" >chrome://extensions/</span> on url bar
 
 - Enable Dev mode  
 
@@ -37,4 +38,4 @@ git clone https://github.com/asadbek064/Simple-StartupPage.git
 ![preview](https://res.cloudinary.com/dhl6hc7bs/image/upload/v1609207719/simple_startup/chrome-extension___fibilkjmgcbcfpheklmpoldhfdbmlbpp_simple_tab.html_2_rjtzh2.png)
 
 
-
+[OrigRepo 0-l/dawn](https://github.com/0-l/dawn)
