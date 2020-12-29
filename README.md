@@ -8,7 +8,7 @@ Chrome doesn't allow to configure a new tab URL. So I made my own its fully cust
 * Custom Bookmarks
 * Upload Your Own Wallpapers
 * Weather Service
-* Date Time 
+* Date/Time 
 * All Data is stored on LocalStorage except imageHosting 
 * Image Hosting is hadled by [Cloudinary]("https://cloudinary.com/")
 * LightWeight code (jQuery/JS/HTML/CSS3)
