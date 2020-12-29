@@ -5,7 +5,7 @@ Chrome doesn't allow to configure a new tab URL. So I made my own its fully cust
 
 ## Features
 * Reminder Todo
-* Custom Cards Links
+* Custom Bookmarks
 * Upload Your Own Wallpapers
 * Weather Service
 * Date Time 
