@@ -29,8 +29,12 @@ git clone https://github.com/asadbek064/Simple-StartupPage.git
 ![load Package](https://res.cloudinary.com/dhl6hc7bs/image/upload/v1609206073/simple_startup/cyd37f0ebwcp5me9bphu.png)
 
 - Enjoy simple tab
-## [Demo](https://asadbek064.github.io/Simple-StartupPage/)
-![preview](https://i.imgur.com/VS5aB4R.png)
+## Preview 
+![preview](https://res.cloudinary.com/dhl6hc7bs/image/upload/v1609207719/simple_startup/chrome-extension___fibilkjmgcbcfpheklmpoldhfdbmlbpp_simple_tab.html_oumd7t.png)
+
+![preview](https://res.cloudinary.com/dhl6hc7bs/image/upload/v1609207719/simple_startup/chrome-extension___fibilkjmgcbcfpheklmpoldhfdbmlbpp_simple_tab.html_1_pglaab.png)
+
+![preview](https://res.cloudinary.com/dhl6hc7bs/image/upload/v1609207719/simple_startup/chrome-extension___fibilkjmgcbcfpheklmpoldhfdbmlbpp_simple_tab.html_2_rjtzh2.png)
 
 
 
