@@ -3,7 +3,6 @@ var myWidget = cloudinary.createUploadWidget({
     sources: [ 'local', 'url' ],
     folder: 'simple_startup'}, 
     (error, result) => {
-        console.log(result);
         if (result.info.url != null) {
             var url = result.info.url;
             setBackgroundWallpaper(url);

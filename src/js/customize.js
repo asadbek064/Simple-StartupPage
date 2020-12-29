@@ -48,9 +48,20 @@ class TitleItem {
     }
 }
 
+document.addEventListener('DOMContentLoaded', function() { 
+    /* edit button state */
+    document.getElementById("editButton").addEventListener("click", () => {
+        openEditeView();
+    });
 
-/* edit button state */
+    document.getElementById("saveButton").addEventListener("click", () => {
+        saveEditeView();
+    });
+
+});
+
     function openEditeView() {
+        console.log('open edit');
         document.getElementById("editView").style.display = "block";
         document.getElementById("editButton").style.display = "none";
         document.getElementById("saveButton").style.display = "block";
@@ -96,7 +107,8 @@ class TitleItem {
         savetoLocalStorage("TITLE_LIST", titleList);
         
     }
-  
+
+
     function savetoLocalStorage(key ,list) {
         localStorage.setItem(key, JSON.stringify(list));
     }
@@ -109,15 +121,16 @@ class TitleItem {
         var linkedList = getLocalStorage("LINK_LIST");
         var titleList = getLocalStorage("TITLE_LIST");
 
-        linkedList.forEach(element => {
-            document.getElementById("urlLink"+element.index).value = element.urlLink;
-            document.getElementById("title"+element.index).value = element.title;
-        });
-
-        titleList.forEach(element => {
-            document.getElementById("rowTitle"+element.index).value = element.title;
-        });
-    }
+         
+            linkedList.forEach(element => {
+                document.getElementById("urlLink"+element.index).value = element.urlLink;
+                document.getElementById("title"+element.index).value = element.title;
+            });
+    
+            titleList.forEach(element => {
+                document.getElementById("rowTitle"+element.index).value = element.title;
+            });
+        }
 
     function populatView(title_list, link_list) {
         clear();

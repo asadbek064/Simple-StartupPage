@@ -37,3 +37,7 @@ class Weather {
       .catch(err => console.warn('Weather API returned an error.'));
   }
 }
+
+document.getElementById("_weather").addEventListener("click", () => {
+  document.getElementById('ChangeLoc').focus(); return false;
+})

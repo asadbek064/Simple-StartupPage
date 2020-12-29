@@ -32,8 +32,14 @@ window.onload = function PageLoad() {
   var guestWallpaper = getLocalStorage("GUEST_WALLPPAPER");
   if (guestWallpaper != null) {
        /* set guest wallpaper */
-       console.log(guestWallpaper.URL);
        document.getElementsByTagName("body")[0].style = "background-image: url("+guestWallpaper.URL+")";
+       
+       /*  force reload tab for wallpaper to change */
+       chrome.tabs.getSelected(null, function(tab) {
+        var code = 'window.location.reload();';
+        chrome.tabs.executeScript(tab.id, {code: code});
+      });
+
   } else {
     /*  Set default wallpapers */
     const ListImages = ['1.jpg','2.jpg','3.png','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg','11.jpg','12.png','13.jpg','14.jpg','15.jpg','16.jpg','17.jpg','18.jpg','19.jpg','20.jpg','21.png','22.png'];

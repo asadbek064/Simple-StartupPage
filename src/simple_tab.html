@@ -31,7 +31,7 @@
                     <div class="!+ + weather-config">
                         <input id="ChangeLoc" name="color" type="text" placeholder="Zip Code">
                     </div>
-                    <div class="+ weather"  onclick="document.getElementById('ChangeLoc').focus(); return false;">
+                    <div class="+ weather"  id="_weather">
                         <button class="!+ edit">edit</button>
                         <p temperature>4ºC</p>
                         <p weather class="+">
@@ -44,8 +44,8 @@
                 </div>
             </ul>
             <div class="editButtonWrapper">
-                <a  id="editButton" onclick="openEditeView()"><img src="./img/icons/customize.png" alt="customize_icon"></a>
-                <a  id="saveButton" onclick="saveEditeView()"><img src="./img/icons/checked.png" alt="checked_icon"></a>
+                <a  id="editButton" ><img src="./img/icons/customize.png" alt="customize_icon"></a>
+                <a  id="saveButton" ><img src="./img/icons/checked.png" alt="checked_icon"></a>
             </div>
             <div id="editView">
                 <div class="parent">
