@@ -1,6 +1,4 @@
 # Simple-Tab Chrome Extension 
-![Simple-Tab](http://res.cloudinary.com/dhl6hc7bs/image/upload/v1609206232/simple_startup/ut0pokoahmwegethwz9r.png)
-
 Chrome doesn't allow to configure a new tab URL. So I made my own its fully customizable, you can add your own card links and your own custom wallpaper.
 
 ## Features
