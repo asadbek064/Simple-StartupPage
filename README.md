@@ -7,10 +7,11 @@ Chrome doesn't allow to configure a new tab URL. So I made my own its fully cust
 ## Features
 * Reminder Todo
 * Custom Bookmarks
-* Upload Your Own Wallpapers
+* Each Bookmark will grab its respected domain icon
+* Custom Wallpapers
 * Weather Service
 * Date/Time 
-* All Data is stored on LocalStorage except imageHosting 
+* Data is stored on LocalStorage except imageHosting 
 * Image Hosting is hadled by [Cloudinary]("https://cloudinary.com/")
 * LightWeight code (jQuery/JS/HTML/CSS3)
 
