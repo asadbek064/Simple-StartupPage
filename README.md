@@ -34,7 +34,7 @@ git clone https://github.com/asadbek064/Simple-StartupPage.git
 ## Preview 
 ![preview](https://res.cloudinary.com/dhl6hc7bs/image/upload/v1609207719/simple_startup/chrome-extension___fibilkjmgcbcfpheklmpoldhfdbmlbpp_simple_tab.html_oumd7t.png)
 
-![preview](https://res.cloudinary.com/dhl6hc7bs/image/upload/v1609207719/simple_startup/chrome-extension___fibilkjmgcbcfpheklmpoldhfdbmlbpp_simple_tab.html_1_pglaab.png)
+![preview](http://res.cloudinary.com/dhl6hc7bs/image/upload/v1609268959/simple_startup/sa0xqwe2susthrzdmhns.png)
 
 ![preview](https://res.cloudinary.com/dhl6hc7bs/image/upload/v1609207719/simple_startup/chrome-extension___fibilkjmgcbcfpheklmpoldhfdbmlbpp_simple_tab.html_2_rjtzh2.png)
 
