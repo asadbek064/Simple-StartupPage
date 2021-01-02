@@ -8,7 +8,7 @@ const row1 = [1,6,11,16];
 const row2 = [2,7,12,17];
 const row3 = [3,8,13,18];
 const row4 = [4,9,14,19];
-const row5 = [5,10,15,20];
+
 
 class LinkItem {
     constructor(urlLink, title, index) {
@@ -150,9 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log("row 3");
             } else if (row4.indexOf(el.index) !== -1) {
                 appendTo("row4", el);
-            } else if (row5.indexOf(el.index) !== -1) {
-                appendTo("row5", el); 
-            } 
+            }
         });
     }
 

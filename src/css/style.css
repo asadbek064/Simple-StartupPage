@@ -685,13 +685,16 @@ input {
   
 }
 .tableTitles > input {
+    width: 100px;
     text-align: center;
     font-size: medium;
     margin: 0.3rem;
     border-radius: 2px;   
+    transition: 0.22s ease-in-out;  
 }
 
 .tableTitles > input:hover  {
+    transform: scale(1.12);
     background-color: #38ad73;
     color:white;
 }
